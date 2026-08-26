@@ -1,31 +1,6 @@
 # DSA Practice & Build Activity Log
 
 
-## [2026-08-26 03:15:20 UTC] perf(dsa/arrays): optimize Two Pointer approach for Trapping Rain Water problem
-
-**Module:** `dsa/arrays`  
-**Status:** Verified & Compiled  
-
-### Summary
-Reduced auxiliary space from O(N) left/right max arrays to O(1) space using two converging pointers.
-
-```cpp
-int trap(vector<int>& height) {
-    int left = 0, right = height.size() - 1;
-    int left_max = 0, right_max = 0, water = 0;
-    while (left < right) {
-        if (height[left] < height[right]) {
-            height[left] >= left_max ? (left_max = height[left]) : water += (left_max - height[left]);
-            left++;
-        } else {
-            height[right] >= right_max ? (right_max = height[right]) : water += (right_max - height[right]);
-            right--;
-        }
-    }
-    return water;
-}
-```
-
 ## [2026-08-26 03:15:21 UTC] docs(dsa/readme): update complexity analysis summary for Sorting Algorithms
 
 **Module:** `dsa/readme`  
@@ -106,3 +81,17 @@ int trap(vector<int>& height) {
     return water;
 }
 ```
+
+## [2026-08-26 17:30:29 UTC] docs(dsa/readme): update complexity analysis summary for Sorting Algorithms
+
+**Module:** `dsa/readme`  
+**Status:** Verified & Compiled  
+
+### Summary
+Documented time/space tradeoffs for QuickSort, MergeSort, HeapSort, and Timsort across best, average, and worst cases.
+
+| Algorithm | Best | Average | Worst | Space |
+|-----------|------|---------|-------|-------|
+| QuickSort | O(N log N) | O(N log N) | O(N^2) | O(log N) |
+| MergeSort | O(N log N) | O(N log N) | O(N log N) | O(N) |
+| HeapSort | O(N log N) | O(N log N) | O(N log N) | O(1) |
