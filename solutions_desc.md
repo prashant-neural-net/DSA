@@ -1,20 +1,6 @@
 # DSA Practice & Build Activity Log
 
 
-## [2026-08-26 03:15:21 UTC] docs(dsa/readme): update complexity analysis summary for Sorting Algorithms
-
-**Module:** `dsa/readme`  
-**Status:** Verified & Compiled  
-
-### Summary
-Documented time/space tradeoffs for QuickSort, MergeSort, HeapSort, and Timsort across best, average, and worst cases.
-
-| Algorithm | Best | Average | Worst | Space |
-|-----------|------|---------|-------|-------|
-| QuickSort | O(N log N) | O(N log N) | O(N^2) | O(log N) |
-| MergeSort | O(N log N) | O(N log N) | O(N log N) | O(N) |
-| HeapSort | O(N log N) | O(N log N) | O(N log N) | O(1) |
-
 ## [2026-08-26 15:31:20 UTC] test(dsa/strings): add test cases for KMP string matching edge conditions
 
 **Module:** `dsa/strings`  
@@ -83,6 +69,20 @@ int trap(vector<int>& height) {
 ```
 
 ## [2026-08-26 17:30:29 UTC] docs(dsa/readme): update complexity analysis summary for Sorting Algorithms
+
+**Module:** `dsa/readme`  
+**Status:** Verified & Compiled  
+
+### Summary
+Documented time/space tradeoffs for QuickSort, MergeSort, HeapSort, and Timsort across best, average, and worst cases.
+
+| Algorithm | Best | Average | Worst | Space |
+|-----------|------|---------|-------|-------|
+| QuickSort | O(N log N) | O(N log N) | O(N^2) | O(log N) |
+| MergeSort | O(N log N) | O(N log N) | O(N log N) | O(N) |
+| HeapSort | O(N log N) | O(N log N) | O(N log N) | O(1) |
+
+## [2026-08-26 17:30:30 UTC] docs(dsa/readme): update complexity analysis summary for Sorting Algorithms
 
 **Module:** `dsa/readme`  
 **Status:** Verified & Compiled  
